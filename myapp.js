@@ -50,6 +50,7 @@ app.get('/next', function(req, res){
 
 	res.send(JSON.stringify(obj) + "<br><a href=http://localhost:4000/"+req.query.next+"><button>Go to Next Location</button></a>")
 })
+
 app.use(function(req, res){
        res.send('Magellan did not travel to ' + req.url.slice(1) + '.');
    });
